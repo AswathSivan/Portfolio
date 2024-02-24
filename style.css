@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+p {
+  color: rgb(85, 85, 85);
+}
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+nav,
+.nav-links {
+  display: flex;
+}
+nav {
+  justify-content: space-between;
+  align-items: center;
+  height: 14vh;
+  width: 80vw;
+  margin: auto;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1rem;
+}
+a {
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
+a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 1.5rem;
+  width: 0;
+  height: 2px; /* Thickness of the underline */
+  background-color: grey; /* Color of the underline */
+  transition: width 0.3s ease; /* Add transition for width */
+}
+a:hover::before {
+  width: 100%; /* Expand the underline to full width on hover */
+  color: grey;
+}
+a:hover {
+  color: grey;
+}
+.logo {
+  font-size: 2.1rem;
+  font-weight: 200;
+}
+.logo:hover {
+  cursor: default;
+}
+#mobile-nav {
+  display: none;
+}
+.mobile-nav-links {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.mobile-nav-links li {
+  list-style: none;
+}
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+  height: fit-content;
+
+}
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+.section-picture-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+.section-picture-container img {
+  border-radius: 50%;
+}
+.profile-desc {
+  align-self: center;
+  text-align: center;
+}
+.profile-desc p {
+  font-weight: 600;
+}
+.profile-desc > :nth-child(2) {
+  font-size: 3rem;
+  text-align: center;
+}
+.profile-desc > :nth-child(3) {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+.btn-color-2 {
+  background: none;
+}
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
