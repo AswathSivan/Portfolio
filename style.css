@@ -24,11 +24,15 @@ nav,
   display: flex;
 }
 nav {
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  height: 14vh;
-  width: 80vw;
-  margin: auto;
+  height: 12vh;
+  width: 100%;
+  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: 1px solid black;
 }
 
 .nav-links {
@@ -79,7 +83,7 @@ a:hover {
 }
 
 section {
-  padding-top: 4vh;
+  padding-top: 2vh;
   height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
@@ -92,12 +96,13 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 85vh;
+
 }
 .section-picture-container {
   display: flex;
-  height: 400px;
-  width: 400px;
+  height: 350px;
+  width: 350px;
   margin: auto 0;
 }
 .section-picture-container img {
@@ -110,7 +115,7 @@ section {
 .profile-desc p {
   font-weight: 600;
 }
-.profile-desc > :nth-child(2) {
+.title {
   font-size: 3rem;
   text-align: center;
 }
@@ -157,10 +162,116 @@ section {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
-  margin-bottom: 2rem;
   gap: 1rem;
 }
 .icon {
   cursor: pointer;
   height: 2rem;
+}
+.title{
+  margin-top: 5rem;
+}
+.profile-title{
+  margin-top: 0;
+}
+.section-container{
+  display: flex;
+  gap: 4rem;
+  height: 80%;
+}
+.about-details-container{
+  display: flex;
+  gap:2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.about-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.section-picture-container .about-pic{
+  border-radius: 2rem;
+}
+.details-container {
+  padding: 1rem;
+  flex: 1;
+  border-radius: 2rem;
+  border: 1px solid black;
+  text-align: center;
+}
+.experience-container{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.experience-section{
+  display: flex;
+  gap: 2rem;
+  height: 80%;
+}
+.experience{
+  border: 1px solid black;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  flex: 1;
+}
+.experience > :nth-child(1){
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.experience > :nth-child(2){
+  font-weight: 700;
+  font-size: 1rem;
+  color: black;
+}
+.experience > :nth-child(4){
+  font-weight: 400;
+  color: black;
+  margin-bottom: 1rem;
+}
+.skills-grid p{
+  font-size: 1.25rem;
+
+}
+.skills-grid{
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+#contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+}
+.contact-container{
+  border: 1px solid black;
+  border-radius: 2rem;
+  display: flex;
+  margin: 2rem auto;
+  padding: 1rem;
+  gap: 5rem;
+}
+.contact-info-container{
+  display: flex;
+  align-items: center;
+  gap:1rem;
+}
+.contact-icon{
+  cursor: default;
+  height: 3rem;
+}
+.email-icon{
+  height: 3.5rem;
+}
+footer{
+  text-align: center;
+  margin: 2rem 0;
 }
