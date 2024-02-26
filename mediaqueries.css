@@ -5,9 +5,12 @@
     margin-bottom: 6rem;
   }
   #about,
-  #experience {
+  #experience,#contact {
     margin: 0 auto 2rem; /* Center the sections */
     width: 90%; /* Adjust width to fit within the available space */
+  }
+  #contact{
+    height: 100vh;
   }
 
 }
@@ -65,5 +68,76 @@
   .section-container {
     height: fit-content;
   }
+
+}
+@media screen and (max-width: 600px) {
+.title{
+  font-size: 2rem;
+}
+.profile-desc > :nth-child(3) {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.btn{
+  padding: 0.75rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+.section-picture-container img {
+  height: 200px;
+  width: 200px;
+}
+#profile .section-picture-container {
+  height: 200px;
+  width: 200px;
+  justify-content: center;
+}
+#about .section-picture-container {
+  height: 200px;
+  width: 200px;
+  justify-content: center;
+}
+.details-container p{
+  font-size: 0.75rem;
+}
+.text-container p{
+  font-size: 0.75rem;
+}
+.experience > :nth-child(1){
+  font-size: 1.25rem;
+}
+.experience > :nth-child(2){
+  font-weight: 700;
+  font-size: 0.75rem;
+  color: black;
+}
+.experience > :nth-child(3){
+  font-size: 0.75rem;
+
+}
+.experience > :nth-child(4){
+  font-size: 0.75rem;
+}
+.experience > :nth-child(5){
+  font-size: 0.75rem;
+}
+.skills-grid p{
+  font-size: 0.75rem;
+  text-align: center;
+}
+.contact-icon{
+  cursor: default;
+  height: 1.5rem;
+}
+.email-icon{
+  height: 2rem;
+}
+.contact-container{
+  flex-wrap: wrap;
+}
+
+footer p{
+  font-size: 0.75rem;
+}
 
 }
