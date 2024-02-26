@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+p {
+  color: rgb(85, 85, 85);
+}
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+nav,
+.nav-links {
+  display: flex;
+}
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 12vh;
+  width: 100%;
+  margin: 0 auto;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  border-bottom: 1px solid black;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1rem;
+}
+a {
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
+a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 1.5rem;
+  width: 0;
+  height: 2px; /* Thickness of the underline */
+  background-color: grey; /* Color of the underline */
+  transition: width 0.3s ease; /* Add transition for width */
+}
+a:hover::before {
+  width: 100%; /* Expand the underline to full width on hover */
+  color: grey;
+}
+a:hover {
+  color: grey;
+}
+.logo {
+  font-size: 2.1rem;
+  font-weight: 200;
+}
+.logo:hover {
+  cursor: default;
+}
+#mobile-nav {
+  display: none;
+}
+.mobile-nav-links {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.mobile-nav-links li {
+  list-style: none;
+}
+
+section {
+  padding-top: 2vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+  height: fit-content;
+
+}
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 85vh;
+
+}
+.section-picture-container {
+  display: flex;
+  height: 350px;
+  width: 350px;
+  margin: auto 0;
+}
+.section-picture-container img {
+  border-radius: 50%;
+}
+.profile-desc {
+  align-self: center;
+  text-align: center;
+}
+.profile-desc p {
+  font-weight: 600;
+}
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+.profile-desc > :nth-child(3) {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+.btn-color-2 {
+  background: none;
+}
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+.title{
+  margin-top: 5rem;
+}
+.profile-title{
+  margin-top: 0;
+}
+.section-container{
+  display: flex;
+  gap: 4rem;
+  height: 80%;
+}
+.about-details-container{
+  display: flex;
+  gap:2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.about-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.section-picture-container .about-pic{
+  border-radius: 2rem;
+}
+.details-container {
+  padding: 1rem;
+  flex: 1;
+  border-radius: 2rem;
+  border: 1px solid black;
+  text-align: center;
+}
+.experience-container{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.experience-section{
+  display: flex;
+  gap: 2rem;
+  height: 80%;
+}
+.experience{
+  border: 1px solid black;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  flex: 1;
+}
+.experience > :nth-child(1){
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.experience > :nth-child(2){
+  font-weight: 700;
+  font-size: 1rem;
+  color: black;
+}
+.experience > :nth-child(4){
+  font-weight: 400;
+  color: black;
+  margin-bottom: 1rem;
+}
+.skills-grid p{
+  font-size: 1.25rem;
+
+}
+.skills-grid{
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+
+.contact-container{
+  border: 1px solid black;
+  border-radius: 2rem;
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+  margin: 2rem auto;
+  padding: 1rem;
+  gap: 1rem;
+}
+.contact-info-container{
+  display: flex;
+  align-items: center;
+  gap:1rem;
+}
+.contact-icon{
+  cursor: default;
+  height: 3rem;
+}
+.email-icon{
+  height: 3.5rem;
+}
+footer{
+  text-align: center;
+  margin: 2rem 0;
+}
